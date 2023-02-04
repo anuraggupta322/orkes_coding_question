@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
-class Main {
+class  Spreadsheet{
     public Map<String, Object> cells = new HashMap<>();
 
     public void setCellValue(String cellId, Object value) {
@@ -30,16 +30,15 @@ class Main {
     public static void main(String args[])
     {
         
-        Main Spreadsheet = new Main();
-        Spreadsheet.setCellValue("A1",12);
-        int value1=Spreadsheet.getCellValue("A1");
+        Spreadsheet spreadsheet = new Spreadsheet();
+        spreadsheet.setCellValue("A1",12);
+        int value1=spreadsheet.getCellValue("A1");
         System.out.println(value1);
-        Spreadsheet.setCellValue("A2",13);
-        int value2=Spreadsheet.getCellValue("A2");
+        spreadsheet.setCellValue("A2",13);
+        int value2=spreadsheet.getCellValue("A2");
         System.out.println(value2);
-        Spreadsheet.setCellValue("A3","A1+A2");
-        int value3=Spreadsheet.getCellValue("A3");
+        spreadsheet.setCellValue("A3","A1+A2");
+        int value3=spreadsheet.getCellValue("A3");
         System.out.println(value3);
-        a
     }
 }
